@@ -16,7 +16,7 @@ describe("Shopping Cart", () => {
     });
 
     it("has DOM elements of", () => {
-      cy.get(".title").should("contain", "Shopping Cart");
+      cy.get(".header__title").should("contain", "Shopping Cart");
     });
   });
 });

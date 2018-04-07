@@ -4,6 +4,10 @@ exports[`The shopping cart app renders correctly 1`] = `
 <header
   className="header"
 >
-  Shopping Cart
+  <h1
+    className="header__title"
+  >
+    Shopping Cart
+  </h1>
 </header>
 `;

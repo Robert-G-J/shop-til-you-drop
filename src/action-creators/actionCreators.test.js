@@ -1,5 +1,5 @@
 import * as actions from "./actionCreators";
-import types from "./constants/types";
+import types from "../constants/types";
 
 describe("Shopping cart action creators", () => {
   describe("Get food item information", () => {

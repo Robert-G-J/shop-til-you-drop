@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import FoodItemList from "./FoodItemList";
-import foodData from "./data/unitPriceList.json";
+import foodData from "../data/unitPriceList.json";
 
 describe("The FoodItemList component", () => {
   const props = foodData;

@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import store from "./store";
-import Cart from "./Cart";
+import Cart from "./components/Cart";
 import registerServiceWorker from "./registerServiceWorker";
 
 const Root = () => (

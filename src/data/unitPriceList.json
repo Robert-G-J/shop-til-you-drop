@@ -1,0 +1,24 @@
+{
+  "foods": [
+    {
+      "type": "peas",
+      "price": "0.95",
+      "unit": "bag"
+    },
+    {
+      "type": "eggs",
+      "price": "2.10",
+      "unit": "dozen"
+    },
+    {
+      "type": "milk",
+      "price": "1.30",
+      "unit": "bottle"
+    },
+    {
+      "type": "beans",
+      "price": "0.73",
+      "unit": "can"
+    }
+  ]
+}

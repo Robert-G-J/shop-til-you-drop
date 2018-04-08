@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./food-item-row.css";
+import { capitalizeString } from "../helpers";
 
 const FoodItemRow = props => (
   <div className="food-item-row">
-    <div className="food-item-row__item">{props.type}</div>
+    <div className="food-item-row__item">{capitalizeString(props.type)}</div>
     <div className="food-item-row__price">£{props.price}</div>
     <div className="food-item-row__unit">per {props.unit}</div>
     <button className="button-increment">+</button>

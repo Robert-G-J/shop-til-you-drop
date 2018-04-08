@@ -16,7 +16,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         <div
           className="food-item-row__item"
         >
-          peas
+          Peas
         </div>
         <div
           className="food-item-row__price"
@@ -57,7 +57,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         <div
           className="food-item-row__item"
         >
-          eggs
+          Eggs
         </div>
         <div
           className="food-item-row__price"
@@ -98,7 +98,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         <div
           className="food-item-row__item"
         >
-          milk
+          Milk
         </div>
         <div
           className="food-item-row__price"
@@ -139,7 +139,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         <div
           className="food-item-row__item"
         >
-          beans
+          Beans
         </div>
         <div
           className="food-item-row__price"

@@ -6,16 +6,20 @@ exports[`The shopping cart app renders correctly 1`] = `
 >
   <div
     className="food-item-row__item"
-  />
+  >
+    Peas
+  </div>
   <div
     className="food-item-row__price"
   >
     £
+    2.10
   </div>
   <div
     className="food-item-row__unit"
   >
     per 
+    bag
   </div>
   <button
     className="button-increment"

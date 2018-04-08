@@ -7,13 +7,18 @@ import renderer from "react-test-renderer";
 
 describe("The shopping cart app", () => {
   let component;
-
+  const props = {
+    id: 1,
+    type: "peas",
+    price: "2.10",
+    unit: "bag"
+  };
   beforeEach(() => {
-    component = shallow(<FoodItemRow />);
+    component = shallow(<FoodItemRow {...props} />);
   });
 
   it("renders correctly", () => {
-    const tree = renderer.create(<FoodItemRow />).toJSON();
+    const tree = renderer.create(<FoodItemRow {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

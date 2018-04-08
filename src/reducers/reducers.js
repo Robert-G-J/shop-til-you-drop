@@ -1,9 +1,10 @@
 import types from "../constants/types";
+import foodData from "../data/unitPriceList.json";
 
 export const initialState = {
   foodData: {
     isGetting: false,
-    foods: []
+    foods: [...foodData.foods]
   }
 };
 

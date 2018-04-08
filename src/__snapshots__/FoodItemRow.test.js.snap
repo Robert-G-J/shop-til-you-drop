@@ -9,7 +9,14 @@ exports[`The shopping cart app renders correctly 1`] = `
   />
   <div
     className="food-item-row__price"
-  />
+  >
+    £
+  </div>
+  <div
+    className="food-item-row__unit"
+  >
+    per 
+  </div>
   <button
     className="button-increment"
   >

@@ -1,13 +1,13 @@
 import React from "react";
-import FoodItemRow from "./FoodItemRow";
+import FoodItemsContainer from "./FoodItemsContainer";
 
 const Cart = () => (
-  <body>
+  <div className="cart__body">
     <header className="header">
       <h1 className="header__title">Shopping Cart</h1>
     </header>
-    <FoodItemRow />
-  </body>
+    <FoodItemsContainer />
+  </div>
 );
 
 export default Cart;

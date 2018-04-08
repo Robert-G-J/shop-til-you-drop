@@ -21,10 +21,10 @@ describe("Shopping Cart", () => {
         cy.get("button:first").should("contain", "+");
         cy.get("button:last").should("contain", "-");
       });
-
-      // cy.get(".food-item-row");
-      // cy.get(".food-item-row");
-      // cy.get(".food-item-row");
+      cy.get(".food-item-row__item");
+      cy.get(".food-item-row__price");
+      cy.get(".food-item-row__quantity");
+      cy.get(".food-item-row__subtotal");
     });
   });
 });

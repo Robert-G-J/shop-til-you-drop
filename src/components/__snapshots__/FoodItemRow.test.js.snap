@@ -5,18 +5,18 @@ exports[`The shopping cart app renders correctly 1`] = `
   className="table-row"
 >
   <div
-    className="table-row__text"
+    className="table-row__product table-row__text"
   >
     Peas
   </div>
   <div
-    className="table-row__text"
+    className="table-row__price table-row__text"
   >
     £
     2.10
   </div>
   <div
-    className="table-row__text"
+    className="table-row__unit table-row__text"
   >
     per 
     bag

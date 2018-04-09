@@ -2,17 +2,16 @@
 
 import React from "react";
 import Cart from "./Cart";
-import { mount, shallow } from "enzyme";
+import { shallow } from "enzyme";
+import thunk from "redux-thunk";
+import configureStore from "redux-mock-store";
 import renderer from "react-test-renderer";
 
 describe("The shopping cart app", () => {
-  xit("renders correctly", () => {
-    const tree = renderer.create(<Cart />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  const store = configureStore([thunk])();
 
-  xit("doesn't crash", () => {
-    const component = mount(<Cart />);
-    expect(component.exists()).toEqual(true);
+  it("doesn't crash", () => {
+    const wrapper = shallow(<Cart store={store} />);
+    expect(wrapper.exists()).toEqual(true);
   });
 });

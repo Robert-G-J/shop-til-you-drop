@@ -68,7 +68,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           bag
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-increment"
@@ -77,7 +77,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           </button>
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-decrement"
@@ -121,7 +121,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           dozen
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-increment"
@@ -130,7 +130,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           </button>
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-decrement"
@@ -174,7 +174,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           bottle
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-increment"
@@ -183,7 +183,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           </button>
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-decrement"
@@ -227,7 +227,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           can
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-increment"
@@ -236,7 +236,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
           </button>
         </div>
         <div
-          className="table-row__button"
+          className="table-row__text"
         >
           <button
             className="button-decrement"

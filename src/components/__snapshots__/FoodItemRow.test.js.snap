@@ -22,7 +22,7 @@ exports[`The shopping cart app renders correctly 1`] = `
     bag
   </div>
   <div
-    className="table-row__button"
+    className="table-row__text"
   >
     <button
       className="button-increment"
@@ -31,7 +31,7 @@ exports[`The shopping cart app renders correctly 1`] = `
     </button>
   </div>
   <div
-    className="table-row__button"
+    className="table-row__text"
   >
     <button
       className="button-decrement"

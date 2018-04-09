@@ -4,13 +4,15 @@ import { capitalizeString } from "../helpers";
 
 const FoodItemRow = props => (
   <div className="table-row">
-    <div className="table-row__text">{capitalizeString(props.type)}</div>
-    <div className="table-row__text">£{props.price}</div>
-    <div className="table-row__text">per {props.unit}</div>
-    <div className="table-row__button">
+    <div className="table-row__product table-row__text">
+      {capitalizeString(props.type)}
+    </div>
+    <div className="table-row__price table-row__text">£{props.price}</div>
+    <div className="table-row__unit table-row__text">per {props.unit}</div>
+    <div className="table-row__text">
       <button className="button-increment">+</button>
     </div>
-    <div className="table-row__button">
+    <div className="table-row__text">
       <button className="button-decrement">-</button>
     </div>
     <div className="table-row__quantity table-row__text">0</div>

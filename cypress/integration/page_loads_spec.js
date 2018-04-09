@@ -17,14 +17,16 @@ describe("Shopping Cart", () => {
 
     it("has DOM elements of", () => {
       cy.get(".header__title").should("contain", "Shopping Cart");
-      cy.get(".food-item-row").within(() => {
+      cy.get(".table-row").within(() => {
         cy.get("button:first").should("contain", "+");
         cy.get("button:last").should("contain", "-");
       });
-      cy.get(".food-item-row__item");
-      cy.get(".food-item-row__price");
-      cy.get(".food-item-row__quantity");
-      cy.get(".food-item-row__subtotal");
+      cy.get(".table-row__product");
+      cy.get(".table-row__price");
+      cy.get(".table-row__unit");
+      cy.get(".table-row__quantity");
+      cy.get(".table-row__quantity");
+      cy.get(".table-row__subtotal");
     });
   });
 });

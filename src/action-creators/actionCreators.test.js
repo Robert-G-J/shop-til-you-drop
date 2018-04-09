@@ -10,4 +10,12 @@ describe("Shopping cart action creators", () => {
       expect(actions.isGettingFoodItems).toEqual(expectedAction);
     });
   });
+  describe("Can change quantity of a product", () => {
+    it("by incrementing", () => {
+      const expectedAction = {
+        type: types.INCREMENT_QUANTITY
+      };
+      expect(actions.incrementQuantity).toEqual(expectedAction);
+    });
+  });
 });

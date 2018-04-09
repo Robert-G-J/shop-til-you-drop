@@ -71,18 +71,84 @@ exports[`The FoodItemList component renders correctly 1`] = `
           className="table-row__text"
         >
           <button
-            className="button-increment"
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            +
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div
           className="table-row__text"
         >
           <button
-            className="button-decrement"
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            -
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div
@@ -124,18 +190,84 @@ exports[`The FoodItemList component renders correctly 1`] = `
           className="table-row__text"
         >
           <button
-            className="button-increment"
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            +
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div
           className="table-row__text"
         >
           <button
-            className="button-decrement"
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            -
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div
@@ -177,18 +309,84 @@ exports[`The FoodItemList component renders correctly 1`] = `
           className="table-row__text"
         >
           <button
-            className="button-increment"
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            +
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div
           className="table-row__text"
         >
           <button
-            className="button-decrement"
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            -
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div
@@ -230,18 +428,84 @@ exports[`The FoodItemList component renders correctly 1`] = `
           className="table-row__text"
         >
           <button
-            className="button-increment"
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            +
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div
           className="table-row__text"
         >
           <button
-            className="button-decrement"
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
           >
-            -
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
           </button>
         </div>
         <div

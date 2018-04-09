@@ -1,4 +1,4 @@
-import * as helpers from "./helpers";
+import * as helpers from ".";
 
 describe("Helper functions", () => {
   it("can capitalize a string", () => {

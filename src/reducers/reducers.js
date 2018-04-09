@@ -5,6 +5,10 @@ export const initialState = {
   foodData: {
     isGetting: false,
     foods: [...foodData.foods]
+  },
+  basket: {
+    items: [],
+    total: "0.00"
   }
 };
 

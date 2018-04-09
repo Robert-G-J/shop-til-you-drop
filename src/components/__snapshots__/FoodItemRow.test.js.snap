@@ -2,40 +2,44 @@
 
 exports[`The shopping cart app renders correctly 1`] = `
 <div
-  className="food-item-row"
+  className="table-row"
 >
   <div
-    className="food-item-row__item"
+    className="table-row__type table-row__text"
   >
     Peas
   </div>
   <div
-    className="food-item-row__price"
+    className="table-row__price table-row__number"
   >
     £
     2.10
   </div>
   <div
-    className="food-item-row__unit"
+    className="table-row__unit table-row__text"
   >
     per 
     bag
   </div>
   <button
-    className="button-increment"
+    className="button-increment table-row__text"
   >
     +
   </button>
   <button
-    className="button-decrement"
+    className="button-decrement table-row__text"
   >
     -
   </button>
   <div
-    className="food-item-row__quantity"
-  />
+    className="table-row__quantity table-row__number"
+  >
+    0
+  </div>
   <div
-    className="food-item-row__subtotal"
-  />
+    className="table-row__subtotal table-row__number"
+  >
+    0
+  </div>
 </div>
 `;

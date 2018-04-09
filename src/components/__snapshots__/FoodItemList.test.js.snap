@@ -2,173 +2,226 @@
 
 exports[`The FoodItemList component renders correctly 1`] = `
 <div
-  className="food-item-table"
+  className="product-table"
 >
-  <ul
-    className="food-item__list"
+  <div
+    className="table-row header"
   >
+    <div
+      className="table-row__text"
+    >
+      Product
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Price
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Unit
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Add
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Remove
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Quantity
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Subtotal
+    </div>
+  </div>
+  <ul>
     <li
-      className="food-item-list__element"
+      className="product-row__element"
     >
       <div
-        className="food-item-row"
+        className="table-row"
       >
         <div
-          className="food-item-row__item"
+          className="table-row__type table-row__text"
         >
           Peas
         </div>
         <div
-          className="food-item-row__price"
+          className="table-row__price table-row__number"
         >
           £
           0.95
         </div>
         <div
-          className="food-item-row__unit"
+          className="table-row__unit table-row__text"
         >
           per 
           bag
         </div>
         <button
-          className="button-increment"
+          className="button-increment table-row__text"
         >
           +
         </button>
         <button
-          className="button-decrement"
+          className="button-decrement table-row__text"
         >
           -
         </button>
         <div
-          className="food-item-row__quantity"
-        />
+          className="table-row__quantity table-row__number"
+        >
+          0
+        </div>
         <div
-          className="food-item-row__subtotal"
-        />
+          className="table-row__subtotal table-row__number"
+        >
+          0
+        </div>
       </div>
     </li>
     <li
-      className="food-item-list__element"
+      className="product-row__element"
     >
       <div
-        className="food-item-row"
+        className="table-row"
       >
         <div
-          className="food-item-row__item"
+          className="table-row__type table-row__text"
         >
           Eggs
         </div>
         <div
-          className="food-item-row__price"
+          className="table-row__price table-row__number"
         >
           £
           2.10
         </div>
         <div
-          className="food-item-row__unit"
+          className="table-row__unit table-row__text"
         >
           per 
           dozen
         </div>
         <button
-          className="button-increment"
+          className="button-increment table-row__text"
         >
           +
         </button>
         <button
-          className="button-decrement"
+          className="button-decrement table-row__text"
         >
           -
         </button>
         <div
-          className="food-item-row__quantity"
-        />
+          className="table-row__quantity table-row__number"
+        >
+          0
+        </div>
         <div
-          className="food-item-row__subtotal"
-        />
+          className="table-row__subtotal table-row__number"
+        >
+          0
+        </div>
       </div>
     </li>
     <li
-      className="food-item-list__element"
+      className="product-row__element"
     >
       <div
-        className="food-item-row"
+        className="table-row"
       >
         <div
-          className="food-item-row__item"
+          className="table-row__type table-row__text"
         >
           Milk
         </div>
         <div
-          className="food-item-row__price"
+          className="table-row__price table-row__number"
         >
           £
           1.30
         </div>
         <div
-          className="food-item-row__unit"
+          className="table-row__unit table-row__text"
         >
           per 
           bottle
         </div>
         <button
-          className="button-increment"
+          className="button-increment table-row__text"
         >
           +
         </button>
         <button
-          className="button-decrement"
+          className="button-decrement table-row__text"
         >
           -
         </button>
         <div
-          className="food-item-row__quantity"
-        />
+          className="table-row__quantity table-row__number"
+        >
+          0
+        </div>
         <div
-          className="food-item-row__subtotal"
-        />
+          className="table-row__subtotal table-row__number"
+        >
+          0
+        </div>
       </div>
     </li>
     <li
-      className="food-item-list__element"
+      className="product-row__element"
     >
       <div
-        className="food-item-row"
+        className="table-row"
       >
         <div
-          className="food-item-row__item"
+          className="table-row__type table-row__text"
         >
           Beans
         </div>
         <div
-          className="food-item-row__price"
+          className="table-row__price table-row__number"
         >
           £
           0.73
         </div>
         <div
-          className="food-item-row__unit"
+          className="table-row__unit table-row__text"
         >
           per 
           can
         </div>
         <button
-          className="button-increment"
+          className="button-increment table-row__text"
         >
           +
         </button>
         <button
-          className="button-decrement"
+          className="button-decrement table-row__text"
         >
           -
         </button>
         <div
-          className="food-item-row__quantity"
-        />
+          className="table-row__quantity table-row__number"
+        >
+          0
+        </div>
         <div
-          className="food-item-row__subtotal"
-        />
+          className="table-row__subtotal table-row__number"
+        >
+          0
+        </div>
       </div>
     </li>
   </ul>

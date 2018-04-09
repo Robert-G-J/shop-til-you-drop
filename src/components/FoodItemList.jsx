@@ -3,10 +3,20 @@ import PropTypes from "prop-types";
 import FoodItemRow from "./FoodItemRow";
 
 const FoodItemList = ({ foods }) => (
-  <div className="food-item-table">
-    <ul className="food-item__list">
+  <div className="product-table">
+    <div className="table-row header">
+      <div className="table-row__text">Product</div>
+      <div className="table-row__text">Price</div>
+      <div className="table-row__text">Unit</div>
+      <div className="table-row__text">Add</div>
+      <div className="table-row__text">Remove</div>
+      <div className="table-row__text">Quantity</div>
+      <div className="table-row__text">Subtotal</div>
+    </div>
+
+    <ul>
       {foods.map(food => (
-        <li className="food-item-list__element" key={food.id}>
+        <li className="product-row__element" key={food.id}>
           <FoodItemRow type={food.type} price={food.price} unit={food.unit} />
         </li>
       ))}

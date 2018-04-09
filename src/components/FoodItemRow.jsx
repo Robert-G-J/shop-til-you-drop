@@ -1,17 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./food-item-row.css";
 import { capitalizeString } from "../helpers";
 
 const FoodItemRow = props => (
-  <div className="food-item-row">
-    <div className="food-item-row__item">{capitalizeString(props.type)}</div>
-    <div className="food-item-row__price">£{props.price}</div>
-    <div className="food-item-row__unit">per {props.unit}</div>
-    <button className="button-increment">+</button>
-    <button className="button-decrement">-</button>
-    <div className="food-item-row__quantity" />
-    <div className="food-item-row__subtotal" />
+  <div className="table-row">
+    <div className="table-row__text">{capitalizeString(props.type)}</div>
+    <div className="table-row__text">£{props.price}</div>
+    <div className="table-row__text">per {props.unit}</div>
+    <div className="table-row__button">
+      <button className="button-increment">+</button>
+    </div>
+    <div className="table-row__button">
+      <button className="button-decrement">-</button>
+    </div>
+    <div className="table-row__quantity table-row__text">0</div>
+    <div className="table-row__subtotal table-row__text">0</div>
   </div>
 );
 

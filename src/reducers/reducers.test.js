@@ -24,4 +24,24 @@ describe("Reducers", () => {
       expect(reducer(undefined, action)).toEqual(expectedState);
     });
   });
+
+  describe("Changing quantity", () => {
+    it("should increment a product by 1", () => {
+      const action = {
+        type: types.INCREMENT_QUANTITY
+      };
+      const expectedState = {
+        ...initialState,
+        basket: {
+          ...initialState.basket,
+          items: [
+            {
+              quantity: 1
+            }
+          ]
+        }
+      };
+      expect(reducer(initialState, action)).toEqual(expectedState);
+    });
+  });
 });

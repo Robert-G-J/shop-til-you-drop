@@ -7,7 +7,8 @@ export const initialState = {
     foods: [...foodData.foods]
   },
   basket: {
-    items: [],
+    items: [{ id: 1, quantity: 3, subtotal: 343.0 }],
+    currency: "GBP",
     total: "0.00"
   }
 };
@@ -20,6 +21,19 @@ export const reducer = (state = initialState, action) => {
         foodData: {
           isGetting: true,
           ...state.foodData.foods
+        }
+      };
+
+    case types.INCREMENT_QUANTITY:
+      return {
+        ...state,
+        basket: {
+          ...state.basket,
+          items: [
+            {
+              quantity: 1
+            }
+          ]
         }
       };
 

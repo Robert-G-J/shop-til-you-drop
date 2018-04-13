@@ -28,12 +28,10 @@ ul {
 .table-row__text {
   flex-grow: 1;
   align-self: center;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-right: 20px;
   flex-basis: 150px;
-  min-width: 100px;
 }
 
 /* General styling for clean look */

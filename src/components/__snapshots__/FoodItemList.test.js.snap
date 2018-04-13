@@ -72,9 +72,10 @@ exports[`The FoodItemList component renders correctly 1`] = `
         >
           <button
             aria-label="add"
-            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 peas button-increment"
             disabled={false}
             onBlur={[Function]}
+            onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -153,9 +154,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         </div>
         <div
           className="table-row__quantity table-row__text"
-        >
-          0
-        </div>
+        />
         <div
           className="table-row__subtotal table-row__text"
         >
@@ -191,9 +190,10 @@ exports[`The FoodItemList component renders correctly 1`] = `
         >
           <button
             aria-label="add"
-            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 eggs button-increment"
             disabled={false}
             onBlur={[Function]}
+            onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -272,9 +272,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         </div>
         <div
           className="table-row__quantity table-row__text"
-        >
-          0
-        </div>
+        />
         <div
           className="table-row__subtotal table-row__text"
         >
@@ -310,9 +308,10 @@ exports[`The FoodItemList component renders correctly 1`] = `
         >
           <button
             aria-label="add"
-            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 milk button-increment"
             disabled={false}
             onBlur={[Function]}
+            onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -391,9 +390,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         </div>
         <div
           className="table-row__quantity table-row__text"
-        >
-          0
-        </div>
+        />
         <div
           className="table-row__subtotal table-row__text"
         >
@@ -429,9 +426,10 @@ exports[`The FoodItemList component renders correctly 1`] = `
         >
           <button
             aria-label="add"
-            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 beans button-increment"
             disabled={false}
             onBlur={[Function]}
+            onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -510,9 +508,7 @@ exports[`The FoodItemList component renders correctly 1`] = `
         </div>
         <div
           className="table-row__quantity table-row__text"
-        >
-          0
-        </div>
+        />
         <div
           className="table-row__subtotal table-row__text"
         >

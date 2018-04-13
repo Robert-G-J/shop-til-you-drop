@@ -11,7 +11,8 @@ describe("The shopping cart app", () => {
     id: 1,
     type: "peas",
     price: "2.10",
-    unit: "bag"
+    unit: "bag",
+    quantity: "0"
   };
   beforeEach(() => {
     component = shallow(<FoodItemRow {...props} />);

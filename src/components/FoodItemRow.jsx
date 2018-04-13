@@ -5,20 +5,23 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import { capitalizeString } from "../helpers";
 
-const FoodItemRow = props => (
+const FoodItemRow = ({ type, unit, quantity, price }) => (
   <div className="table-row">
     <div className="table-row__product table-row__text">
-      {capitalizeString(props.type)}
+      {capitalizeString(type)}
     </div>
-    <div className="table-row__price table-row__text">£{props.price}</div>
-    <div className="table-row__unit table-row__text">per {props.unit}</div>
+    <div className="table-row__price table-row__text">£{price}</div>
+    <div className="table-row__unit table-row__text">per {unit}</div>
     <div className="table-row__text">
       <Button
         variant="fab"
         mini
         color="secondary"
         aria-label="add"
-        className="button-increment"
+        className={`${type} button-increment`}
+        onClick={() => {
+          alert("agh");
+        }}
       >
         <AddIcon />
       </Button>
@@ -34,19 +37,15 @@ const FoodItemRow = props => (
         <RemoveIcon />
       </Button>
     </div>
-    <div className="table-row__quantity table-row__text">0</div>
+    <div className="table-row__quantity table-row__text">{quantity}</div>
     <div className="table-row__subtotal table-row__text">0</div>
   </div>
 );
 
 FoodItemRow.propTypes = {
-  props: PropTypes.arrayOf(
-    PropTypes.shape({
-      type: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
-      unit: PropTypes.string.isRequired
-    })
-  )
+  type: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  unit: PropTypes.string.isRequired
 };
 
 export default FoodItemRow;

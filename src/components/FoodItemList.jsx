@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import FoodItemRow from "./FoodItemRow";
 
-const FoodItemList = ({ foods }) => (
+const FoodItemList = ({ foods, basket }) => (
   <div className="product-table">
     <div className="table-row header">
       <div className="table-row__text">Product</div>
@@ -17,7 +17,12 @@ const FoodItemList = ({ foods }) => (
     <ul>
       {foods.map(food => (
         <li className="product-row__element" key={food.id}>
-          <FoodItemRow type={food.type} price={food.price} unit={food.unit} />
+          <FoodItemRow
+            type={food.type}
+            price={food.price}
+            unit={food.unit}
+            quantity={basket.quantity}
+          />
         </li>
       ))}
     </ul>
@@ -32,6 +37,7 @@ FoodItemList.propTypes = {
       price: PropTypes.string.isRequired,
       unit: PropTypes.string.isRequired
     })
-  )
+  ),
+  basket: PropTypes.arrayOf(PropTypes.shape({}))
 };
 export default FoodItemList;

@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import FoodItemList from "./FoodItemList";
+import FoodTable from "./FoodTable";
 import { incrementQuantity } from "../action-creators/actionCreators";
 
 const mapStateToProps = state => ({
@@ -13,8 +13,8 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
-const FoodItemsContainer = connect(mapStateToProps, mapDispatchToProps)(
-  FoodItemList
+const FoodTableContainer = connect(mapStateToProps, mapDispatchToProps)(
+  FoodTable
 );
 
-export default FoodItemsContainer;
+export default FoodTableContainer;

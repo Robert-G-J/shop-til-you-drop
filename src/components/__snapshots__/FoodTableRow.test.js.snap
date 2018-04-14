@@ -1,32 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The shopping cart app renders correctly 1`] = `
-<div
+<tr
   className="table-row"
 >
-  <div
-    className="table-row__product table-row__text"
+  <td
+    className="table-cell product"
   >
     Peas
-  </div>
-  <div
-    className="table-row__price table-row__text"
+  </td>
+  <td
+    className="table-cell price "
   >
     £
     2.10
-  </div>
-  <div
-    className="table-row__unit table-row__text"
+  </td>
+  <td
+    className="table-cell unit"
   >
     per 
     bag
-  </div>
-  <div
-    className="table-row__text"
+  </td>
+  <td
+    className="table-cell add"
   >
     <button
       aria-label="add"
-      className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 peas button-increment"
+      className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button increment"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -63,13 +63,13 @@ exports[`The shopping cart app renders correctly 1`] = `
         className="MuiTouchRipple-root-25"
       />
     </button>
-  </div>
-  <div
-    className="table-row__text"
+  </td>
+  <td
+    className="table-cell remove"
   >
     <button
       aria-label="remove"
-      className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+      className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button decrement"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -105,16 +105,16 @@ exports[`The shopping cart app renders correctly 1`] = `
         className="MuiTouchRipple-root-25"
       />
     </button>
-  </div>
-  <div
-    className="table-row__quantity table-row__text"
+  </td>
+  <td
+    className="table-cell quantity"
   >
     0
-  </div>
-  <div
-    className="table-row__subtotal table-row__text"
+  </td>
+  <td
+    className="table-cell subtotal"
   >
     0
-  </div>
-</div>
+  </td>
+</tr>
 `;

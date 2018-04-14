@@ -8,37 +8,23 @@ body {
   font-size: 15px;
 }
 
-/* Personal resets */
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-/* Initialise flex container */
-.table-row {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 0;
+table {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
-.table-row__text {
-  flex-grow: 1;
-  align-self: center;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-right: 20px;
-  flex-basis: 150px;
+/* Table  */
+.food-table th,
+.food-table td {
+  text-align: left;
 }
-
-/* General styling for clean look */
+/* Row styles */
 .table-row {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-bottom: 2px solid #e0e0e0;
   border-collapse: collapse;
-  padding-top: 5px;
+  padding-top: 0.33rem;
 }
 
 .table-row.header {
@@ -46,34 +32,25 @@ ul {
   font-weight: bold;
   padding-top: 8px;
   padding-bottom: 8px;
+  text-align: left;
 }
 
-/* Button Styling */
-.button-increment {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 0;
-  background: red;
-  color: #fff;
-  line-height: 25px;
-  text-align: center;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 1rem;
-  box-shadow: 1px 1px 3px #000;
+/* Cell styles */
+.table-cell {
+  text-overflow: ellipsis;
+  padding-right: 20px;
 }
 
-.button-decrement {
-  display: block;
-  flex-grow: 0;
-  background: blue;
-  color: #fff;
-  line-height: 25px;
+.table-cell.add,
+.table-cell.remove {
   text-align: center;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 1rem;
-  box-shadow: 1px 1px 3px #000;
+}
+
+.table-cell.subtotal {
+  font-weight: bolder;
+}
+
+/* Table-buttons styles */
+.button {
+  display: block;
 }

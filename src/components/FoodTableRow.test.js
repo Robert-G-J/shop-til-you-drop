@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from "react";
-import FoodItemRow from "./FoodItemRow";
+import FoodTableRow from "./FoodTableRow";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 
@@ -9,17 +9,17 @@ describe("The shopping cart app", () => {
   let component;
   const props = {
     id: 1,
-    type: "peas",
+    name: "peas",
     price: "2.10",
     unit: "bag",
     quantity: "0"
   };
   beforeEach(() => {
-    component = shallow(<FoodItemRow {...props} />);
+    component = shallow(<FoodTableRow {...props} />);
   });
 
   it("renders correctly", () => {
-    const tree = renderer.create(<FoodItemRow {...props} />).toJSON();
+    const tree = renderer.create(<FoodTableRow {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
@@ -29,11 +29,11 @@ describe("The shopping cart app", () => {
 
   describe("has buttons", () => {
     it("to increment", () => {
-      expect(component.find(".button-increment").length).toEqual(1);
+      expect(component.find(".button.increment").length).toEqual(1);
     });
 
     it("to decrement", () => {
-      expect(component.find(".button-decrement").length).toEqual(1);
+      expect(component.find(".button.decrement").length).toEqual(1);
     });
   });
 });

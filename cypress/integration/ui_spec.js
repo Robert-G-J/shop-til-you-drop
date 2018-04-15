@@ -18,15 +18,12 @@ describe("Shopping Cart", () => {
     it("has DOM elements of", () => {
       cy.get(".header__title").should("contain", "Shopping Cart");
       cy.get(".table-row").within(() => {
-        cy.get(".button-increment");
-        cy.get(".button-decrement");
+        cy.get("input.quantity");
+        cy.get("td.product");
+        cy.get("td.product > .description");
+        cy.get("td.price");
+        cy.get("td.total");
       });
-      cy.get(".table-row__product");
-      cy.get(".table-row__price");
-      cy.get(".table-row__unit");
-      cy.get(".table-row__quantity");
-      cy.get(".table-row__quantity");
-      cy.get(".table-row__subtotal");
     });
   });
 });

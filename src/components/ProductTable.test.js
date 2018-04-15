@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import ProductTable from "./ProductTable";
 import productData from "../data/unitPriceList.json";
 
-describe("The ProductTable component", () => {
+describe("<ProductTable />", () => {
   const props = productData;
 
   it("renders correctly", () => {

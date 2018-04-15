@@ -5,7 +5,7 @@ import ProductTableRow from "./ProductTableRow";
 import { shallow, mount } from "enzyme";
 import renderer from "react-test-renderer";
 
-describe("The shopping cart app", () => {
+describe("<ProductTableRow />", () => {
   let component;
   const mockClick = jest.fn();
 
@@ -27,5 +27,31 @@ describe("The shopping cart app", () => {
 
   it("doesn't crash", () => {
     expect(component.exists()).toEqual(true);
+  });
+
+  it("has product id", () => {
+    expect(component.find("td.id").length).toEqual(1);
+  });
+
+  it("has product name", () => {
+    expect(component.find("td.product").length).toEqual(1);
+  });
+
+  it("has product description", () => {
+    expect(component.find("td .description").length).toEqual(1);
+  });
+
+  it("has product price", () => {
+    expect(component.find("td.price").length).toEqual(1);
+  });
+
+  it("has product quantity cell", () => {
+    expect(component.find("td.quantity").length).toEqual(1);
+  });
+
+  describe("<input>", () => {
+    it("exists", () => {
+      expect(component.find("input.quantity").length).toEqual(1);
+    });
   });
 });

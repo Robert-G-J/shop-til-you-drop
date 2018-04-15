@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const ProductTableRow = ({ id, name, description, price }) => (
   <tr className="table-row">
+    <td className="table-cell id">{id}</td>
     <td className="table-cell product">
       {name}
       <p className="description">{description}</p>

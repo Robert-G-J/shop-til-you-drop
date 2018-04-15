@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The shopping cart app renders correctly 1`] = `
+exports[`<ProductTableRow /> renders correctly 1`] = `
 <tr
   className="table-row"
 >
+  <td
+    className="table-cell id"
+  >
+    1
+  </td>
   <td
     className="table-cell product"
   >

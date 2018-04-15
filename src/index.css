@@ -44,6 +44,9 @@ table {
   color: #aaa;
   border-bottom: 1px solid #eee;
 }
+.table-cell.id {
+  display: none;
+}
 
 .table-cell.product {
   text-transform: capitalize;

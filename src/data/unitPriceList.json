@@ -1,28 +1,32 @@
 {
-  "foods": [
+  "products": [
     {
       "id": 1,
-      "name": "peas",
-      "price": "0.95",
-      "unit": "bag"
+      "name": "plumbus",
+      "description":
+        "A Plumbus will aid many things in life, making life easier. With proper maintenance, handling, storage, and urging, Plumbus will provide you with a lifetime of better living and happiness",
+      "price": "399.99"
     },
     {
       "id": 2,
-      "name": "eggs",
-      "price": "2.10",
-      "unit": "dozen"
+      "name": "butter robot",
+      "description":
+        "Small, two armed, mobile robot created for the sole purpose of passing butter",
+      "price": "49.99"
     },
     {
       "id": 3,
-      "name": "milk",
-      "price": "1.30",
-      "unit": "bottle"
+      "name": "szechuan sauce",
+      "description":
+        "Szechuan Chicken McNugget Sauce, a dipping sauce sachet for McDonald's Chicken McNuggets. AKA Mulan McNugget Sauce",
+      "price": "1.30"
     },
     {
       "id": 4,
-      "name": "beans",
-      "price": "0.73",
-      "unit": "can"
+      "name": "microverse battery",
+      "description":
+        "Contains a miniature universe with a planet inhabited by intelligent life. These lifeforms use kinetic devices to produce electricity. Under the guise of \"waste power\" a majority of the energy produced is extracted to power a small personal spaceship",
+      "price": "90.00"
     }
   ]
 }

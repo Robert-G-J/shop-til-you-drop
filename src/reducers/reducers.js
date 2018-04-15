@@ -1,13 +1,13 @@
 import types from "../constants/types";
-import foodData from "../data/unitPriceList.json";
+import productData from "../data/unitPriceList.json";
 
 export const initialState = {
-  foodData: {
+  productData: {
     isGetting: false,
-    foods: [...foodData.foods]
+    products: [...productData.products]
   },
   basket: {
-    items: [{ id: 1, quantity: 3, subtotal: 343.0 }],
+    items: [{ id: 1, quantity: 3, total: 343.0 }],
     currency: "GBP",
     total: "0.00"
   }
@@ -15,12 +15,12 @@ export const initialState = {
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.IS_GETTING_FOOD_ITEMS:
+    case types.IS_GETTING_PRODUCTS:
       return {
         ...state,
-        foodData: {
+        productData: {
           isGetting: true,
-          ...state.foodData.foods
+          ...state.productData.products
         }
       };
 

@@ -7,17 +7,17 @@ describe("Reducers", () => {
     expect(reducer(undefined, {})).toEqual(initialState);
   });
 
-  describe("Is getting food data from file", () => {
+  describe("Is getting product data from file", () => {
     it("should return the correct state", () => {
       const action = {
-        type: types.IS_GETTING_FOOD_ITEMS
+        type: types.IS_GETTING_PRODUCTS
       };
 
       const expectedState = {
         ...initialState,
-        foodData: {
+        productData: {
           isGetting: true,
-          ...initialState.foodData.foods
+          ...initialState.productData.products
         }
       };
 

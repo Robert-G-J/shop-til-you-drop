@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ProductList component renders correctly 1`] = `
+<div
+  className="product-table"
+>
+  <div
+    className="table-row header"
+  >
+    <div
+      className="table-row__text"
+    >
+      Product
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Price
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Unit
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Add
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Remove
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Quantity
+    </div>
+    <div
+      className="table-row__text"
+    >
+      Subtotal
+    </div>
+  </div>
+  <ul>
+    <li
+      className="product-row__element"
+    >
+      <div
+        className="table-row"
+      >
+        <div
+          className="table-row__product table-row__text"
+        >
+          Peas
+        </div>
+        <div
+          className="table-row__price table-row__text"
+        >
+          £
+          0.95
+        </div>
+        <div
+          className="table-row__unit table-row__text"
+        >
+          per
+          bag
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__quantity table-row__text"
+        >
+          0
+        </div>
+        <div
+          className="table-row__subtotal table-row__text"
+        >
+          0
+        </div>
+      </div>
+    </li>
+    <li
+      className="product-row__element"
+    >
+      <div
+        className="table-row"
+      >
+        <div
+          className="table-row__product table-row__text"
+        >
+          Eggs
+        </div>
+        <div
+          className="table-row__price table-row__text"
+        >
+          £
+          2.10
+        </div>
+        <div
+          className="table-row__unit table-row__text"
+        >
+          per
+          dozen
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__quantity table-row__text"
+        >
+          0
+        </div>
+        <div
+          className="table-row__subtotal table-row__text"
+        >
+          0
+        </div>
+      </div>
+    </li>
+    <li
+      className="product-row__element"
+    >
+      <div
+        className="table-row"
+      >
+        <div
+          className="table-row__product table-row__text"
+        >
+          Milk
+        </div>
+        <div
+          className="table-row__price table-row__text"
+        >
+          £
+          1.30
+        </div>
+        <div
+          className="table-row__unit table-row__text"
+        >
+          per
+          bottle
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__quantity table-row__text"
+        >
+          0
+        </div>
+        <div
+          className="table-row__subtotal table-row__text"
+        >
+          0
+        </div>
+      </div>
+    </li>
+    <li
+      className="product-row__element"
+    >
+      <div
+        className="table-row"
+      >
+        <div
+          className="table-row__product table-row__text"
+        >
+          Beans
+        </div>
+        <div
+          className="table-row__price table-row__text"
+        >
+          £
+          0.73
+        </div>
+        <div
+          className="table-row__unit table-row__text"
+        >
+          per
+          can
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="add"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedSecondary-9 button-increment"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__text"
+        >
+          <button
+            aria-label="remove"
+            className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-fab-11 MuiButton-mini-12 MuiButton-raisedPrimary-8 button-decrement"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-2"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-19"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M19 13H5v-2h14v2z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root-25"
+            />
+          </button>
+        </div>
+        <div
+          className="table-row__quantity table-row__text"
+        >
+          0
+        </div>
+        <div
+          className="table-row__subtotal table-row__text"
+        >
+          0
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

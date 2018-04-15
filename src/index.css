@@ -6,6 +6,7 @@
 body {
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 15px;
+  font-weight: 100;
 }
 
 table {
@@ -13,8 +14,8 @@ table {
 }
 
 /* Table  */
-.food-table th,
-.food-table td {
+.product-table th,
+.product-table td {
   text-align: left;
 }
 /* Row styles */
@@ -22,14 +23,12 @@ table {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid #eee;
   border-collapse: collapse;
   padding-top: 0.33rem;
 }
 
 .table-row.header {
-  background-color: #ffeedb;
-  font-weight: bold;
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: left;
@@ -41,16 +40,29 @@ table {
   padding-right: 20px;
 }
 
-.table-cell.add,
-.table-cell.remove {
-  text-align: center;
+.table-cell.header {
+  color: #aaa;
+  border-bottom: 1px solid #eee;
 }
 
-.table-cell.subtotal {
-  font-weight: bolder;
+.table-cell.product {
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
-/* Table-buttons styles */
-.button {
-  display: block;
+.table-cell.product .description {
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: none;
+}
+
+.table-cell.total {
+  text-align: right;
+}
+.table-cell.quantity {
+  width: 10%;
+}
+
+input.quantity {
+  width: 40px;
 }

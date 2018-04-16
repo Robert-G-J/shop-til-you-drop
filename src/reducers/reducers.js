@@ -7,7 +7,7 @@ export const initialState = {
     products: [...productData.products]
   },
   basket: {
-    items: [{ id: 1, quantity: 3, total: 343.0 }],
+    items: [],
     currency: "GBP",
     total: "0.00"
   }
@@ -24,14 +24,16 @@ export const reducer = (state = initialState, action) => {
         }
       };
 
-    case types.INCREMENT_QUANTITY:
+    case types.UPDATE_QUANTITY:
       return {
         ...state,
         basket: {
           ...state.basket,
           items: [
+            ...state.basket.items,
             {
-              quantity: 1
+              id: action.id,
+              quantity: action.quantity
             }
           ]
         }

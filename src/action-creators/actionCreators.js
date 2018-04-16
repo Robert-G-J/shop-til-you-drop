@@ -4,6 +4,8 @@ export const isGettingProducts = {
   type: types.IS_GETTING_PRODUCTS
 };
 
-export const incrementQuantity = {
-  type: types.INCREMENT_QUANTITY
-};
+export const updateQuantity = args => ({
+  type: types.UPDATE_QUANTITY,
+  id: args.id,
+  quantity: args.quantity
+});

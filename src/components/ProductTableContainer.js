@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import ProductTable from "./ProductTable";
-import { incrementQuantity } from "../action-creators/actionCreators";
+import { updateQuantity } from "../action-creators/actionCreators";
 
 const mapStateToProps = state => ({
   products: state.Reducers.productData.products,
@@ -8,8 +8,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  incrementQuantity: () => {
-    dispatch(incrementQuantity());
+  updateQuantity: () => {
+    dispatch(updateQuantity());
   }
 });
 

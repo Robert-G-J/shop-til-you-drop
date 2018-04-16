@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ProductTableRow from "./ProductTableRow";
 
-const ProductTable = ({ products, basket }) => (
+const ProductTable = ({ updateQuantity, products, basket }) => (
   <table className="product-table">
     <thead>
       <tr className="table-row header">
@@ -20,6 +20,7 @@ const ProductTable = ({ products, basket }) => (
           name={product.name}
           description={product.description}
           price={product.price}
+          updateQuantity={updateQuantity}
         />
       ))}
     </tbody>
@@ -32,7 +33,8 @@ ProductTable.propTypes = {
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired
+      price: PropTypes.string.isRequired,
+      updateQuantity: PropTypes.func.isRequired
     })
   ),
   basket: PropTypes.arrayOf(PropTypes.shape({}))

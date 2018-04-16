@@ -25,18 +25,28 @@ describe("Reducers", () => {
     });
   });
 
-  describe("Changing quantity", () => {
-    it("should increment a product by 1", () => {
+  describe("Changing quantity of an item", () => {
+    it("should return correct state", () => {
       const action = {
-        type: types.INCREMENT_QUANTITY
+        type: types.UPDATE_QUANTITY,
+        id: 1,
+        quantity: 3
+      };
+      const startingState = {
+        ...initialState,
+        basket: {
+          items: [{ id: 1, quantity: 9 }, { id: 2, quantity: 5 }]
+        }
       };
       const expectedState = {
         ...initialState,
         basket: {
           ...initialState.basket,
           items: [
+            ...initialState.basket.items,
             {
-              quantity: 1
+              id: 1,
+              quantity: 3
             }
           ]
         }

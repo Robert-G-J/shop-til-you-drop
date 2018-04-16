@@ -6,6 +6,11 @@ import productData from "../data/unitPriceList.json";
 
 describe("<ProductTable />", () => {
   const props = productData;
+  let component;
+
+  beforeEach(() => {
+    component = shallow(<ProductTable {...props} />);
+  });
 
   it("renders correctly", () => {
     const tree = renderer.create(<ProductTable {...props} />).toJSON();

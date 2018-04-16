@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React from "react";
 import ProductTableRow from "./ProductTableRow";
 import { shallow, mount } from "enzyme";

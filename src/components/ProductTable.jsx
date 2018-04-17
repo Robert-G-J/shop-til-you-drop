@@ -5,11 +5,11 @@ import ProductTableRow from "./ProductTableRow";
 const ProductTable = ({ updateQuantity, products, basket }) => (
   <table className="product-table">
     <thead>
-      <tr className="table-row header">
-        <th className="table-cell header" />
-        <th className="table-cell header">Price</th>
-        <th className="table-cell header quantity">Quantity</th>
-        <th className="table-cell header total">Total</th>
+      <tr className="header">
+        <th />
+        <th>Price</th>
+        <th className="quantity">Quantity</th>
+        <th className="total">Total</th>
       </tr>
     </thead>
     <tbody>
@@ -21,6 +21,7 @@ const ProductTable = ({ updateQuantity, products, basket }) => (
           description={product.description}
           price={product.price}
           updateQuantity={updateQuantity}
+          quantity={basket.items[product.id]}
         />
       ))}
     </tbody>
@@ -33,10 +34,14 @@ ProductTable.propTypes = {
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
-      updateQuantity: PropTypes.func.isRequired
+      price: PropTypes.string.isRequired
     })
   ),
-  basket: PropTypes.arrayOf(PropTypes.shape({}))
+  basket: PropTypes.shape({
+    items: PropTypes.object.isRequired,
+    currency: PropTypes.string.isRequired,
+    total: PropTypes.number.isRequired
+  }),
+  updateQuantity: PropTypes.func.isRequired
 };
 export default ProductTable;

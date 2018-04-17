@@ -32,23 +32,22 @@ describe("Reducers", () => {
         id: 1,
         quantity: 3
       };
+
       const startingState = {
         ...initialState,
         basket: {
-          items: [{ id: 1, quantity: 9 }, { id: 2, quantity: 5 }]
+          items: { 1: 9, 2: 5 }
         }
       };
+
       const expectedState = {
         ...initialState,
         basket: {
           ...initialState.basket,
-          items: [
+          items: {
             ...initialState.basket.items,
-            {
-              id: 1,
-              quantity: 3
-            }
-          ]
+            1: 3
+          }
         }
       };
       expect(reducer(initialState, action)).toEqual(expectedState);

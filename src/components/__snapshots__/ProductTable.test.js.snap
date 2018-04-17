@@ -6,39 +6,33 @@ exports[`<ProductTable /> renders correctly 1`] = `
 >
   <thead>
     <tr
-      className="table-row header"
+      className="header"
     >
-      <th
-        className="table-cell header"
-      />
-      <th
-        className="table-cell header"
-      >
+      <th />
+      <th>
         Price
       </th>
       <th
-        className="table-cell header quantity"
+        className="quantity"
       >
         Quantity
       </th>
       <th
-        className="table-cell header total"
+        className="total"
       >
         Total
       </th>
     </tr>
   </thead>
   <tbody>
-    <tr
-      className="table-row"
-    >
+    <tr>
       <td
-        className="table-cell id"
+        className="id"
       >
         1
       </td>
       <td
-        className="table-cell product"
+        className="product"
       >
         plumbus
         <p
@@ -48,38 +42,38 @@ exports[`<ProductTable /> renders correctly 1`] = `
         </p>
       </td>
       <td
-        className="table-cell price "
+        className="price "
       >
         £
         399.99
       </td>
       <td
-        className="table-cell quantity"
+        className="quantity"
       >
         <input
-          className="quantity"
-          defaultValue="1"
+          className="input-quantity"
+          defaultValue="0"
           min="1"
           name="quantity"
+          onChange={[Function]}
           type="number"
+          value={3}
         />
       </td>
       <td
-        className="table-cell total"
+        className="total"
       >
         0
       </td>
     </tr>
-    <tr
-      className="table-row"
-    >
+    <tr>
       <td
-        className="table-cell id"
+        className="id"
       >
         2
       </td>
       <td
-        className="table-cell product"
+        className="product"
       >
         butter robot
         <p
@@ -89,38 +83,38 @@ exports[`<ProductTable /> renders correctly 1`] = `
         </p>
       </td>
       <td
-        className="table-cell price "
+        className="price "
       >
         £
         49.99
       </td>
       <td
-        className="table-cell quantity"
+        className="quantity"
       >
         <input
-          className="quantity"
-          defaultValue="1"
+          className="input-quantity"
+          defaultValue="0"
           min="1"
           name="quantity"
+          onChange={[Function]}
           type="number"
+          value={3}
         />
       </td>
       <td
-        className="table-cell total"
+        className="total"
       >
         0
       </td>
     </tr>
-    <tr
-      className="table-row"
-    >
+    <tr>
       <td
-        className="table-cell id"
+        className="id"
       >
         3
       </td>
       <td
-        className="table-cell product"
+        className="product"
       >
         szechuan sauce
         <p
@@ -130,38 +124,38 @@ exports[`<ProductTable /> renders correctly 1`] = `
         </p>
       </td>
       <td
-        className="table-cell price "
+        className="price "
       >
         £
         1.30
       </td>
       <td
-        className="table-cell quantity"
+        className="quantity"
       >
         <input
-          className="quantity"
-          defaultValue="1"
+          className="input-quantity"
+          defaultValue="0"
           min="1"
           name="quantity"
+          onChange={[Function]}
           type="number"
+          value={undefined}
         />
       </td>
       <td
-        className="table-cell total"
+        className="total"
       >
         0
       </td>
     </tr>
-    <tr
-      className="table-row"
-    >
+    <tr>
       <td
-        className="table-cell id"
+        className="id"
       >
         4
       </td>
       <td
-        className="table-cell product"
+        className="product"
       >
         microverse battery
         <p
@@ -171,24 +165,26 @@ exports[`<ProductTable /> renders correctly 1`] = `
         </p>
       </td>
       <td
-        className="table-cell price "
+        className="price "
       >
         £
         90.00
       </td>
       <td
-        className="table-cell quantity"
+        className="quantity"
       >
         <input
-          className="quantity"
-          defaultValue="1"
+          className="input-quantity"
+          defaultValue="0"
           min="1"
           name="quantity"
+          onChange={[Function]}
           type="number"
+          value={undefined}
         />
       </td>
       <td
-        className="table-cell total"
+        className="total"
       >
         0
       </td>

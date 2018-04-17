@@ -5,21 +5,25 @@ import renderer from "react-test-renderer";
 
 describe("<ProductTableRow />", () => {
   let component;
-  const mockClick = jest.fn();
+  const mockChange = jest.fn();
 
   const props = {
     id: 1,
     name: "bumbleclark",
     price: "2.10",
     description: "A scnarfing good time",
-    quantity: "0"
+    quantity: 1
   };
   beforeEach(() => {
-    component = shallow(<ProductTableRow {...props} />);
+    component = shallow(
+      <ProductTableRow {...props} updateQuantity={mockChange} />
+    );
   });
 
   it("renders correctly", () => {
-    const tree = renderer.create(<ProductTableRow {...props} />).toJSON();
+    const tree = renderer
+      .create(<ProductTableRow {...props} updateQuantity={mockChange} />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
@@ -49,7 +53,7 @@ describe("<ProductTableRow />", () => {
 
   describe("<input>", () => {
     it("exists", () => {
-      expect(component.find("input.quantity").length).toEqual(1);
+      expect(component.find(".input-quantity").length).toEqual(1);
     });
   });
 });

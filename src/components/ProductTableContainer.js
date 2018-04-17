@@ -8,8 +8,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateQuantity: () => {
-    dispatch(updateQuantity());
+  updateQuantity: params => {
+    dispatch(updateQuantity(params));
   }
 });
 

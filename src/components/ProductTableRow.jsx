@@ -1,25 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ProductTableRow = ({ id, name, description, price, updateQuantity }) => (
-  <tr className="table-row">
-    <td className="table-cell id">{id}</td>
-    <td className="table-cell product">
+const ProductTableRow = ({
+  id,
+  name,
+  description,
+  price,
+  updateQuantity,
+  quantity
+}) => (
+  <tr>
+    <td className="id">{id}</td>
+    <td className="product">
       {name}
       <p className="description">{description}</p>
     </td>
-    <td className="table-cell price ">£{price}</td>
-    <td className="table-cell quantity">
+    <td className="price ">£{price}</td>
+    <td className="quantity">
       <input
-        className="quantity"
+        className="input-quantity"
         type="number"
         name="quantity"
         min="1"
-        defaultValue="1"
-        onChange={updateQuantity(id)}
+        defaultValue="0"
+        value={quantity}
+        onChange={e =>
+          updateQuantity({ id: id, quantity: parseInt(e.target.value, 10) })
+        }
       />
     </td>
-    <td className="table-cell total">0</td>
+    <td className="total">0</td>
   </tr>
 );
 
@@ -28,7 +38,8 @@ ProductTableRow.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  updateQuantity: PropTypes.func.isRequired
+  updateQuantity: PropTypes.func.isRequired,
+  quantity: PropTypes.number
 };
 
 export default ProductTableRow;

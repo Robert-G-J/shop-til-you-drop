@@ -19,7 +19,7 @@ table {
   text-align: left;
 }
 /* Row styles */
-.table-row {
+tr {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -28,44 +28,45 @@ table {
   padding-top: 0.33rem;
 }
 
-.table-row.header {
+tr.header {
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: left;
 }
 
 /* Cell styles */
-.table-cell {
+td {
   text-overflow: ellipsis;
   padding-right: 20px;
 }
 
-.table-cell.header {
+th {
   color: #aaa;
   border-bottom: 1px solid #eee;
 }
-.table-cell.id {
+table .id {
   display: none;
 }
 
-.table-cell.product {
+.product {
   text-transform: capitalize;
   font-weight: 500;
 }
 
-.table-cell.product .description {
+.description {
   font-size: 0.8rem;
   font-weight: 100;
   text-transform: none;
 }
 
-.table-cell.total {
+.total {
   text-align: right;
 }
-.table-cell.quantity {
+
+.quantity {
   width: 10%;
 }
 
-input.quantity {
+.input-quantity {
   width: 40px;
 }

@@ -44,8 +44,14 @@ th {
   color: #aaa;
   border-bottom: 1px solid #eee;
 }
+
 table .id {
   display: none;
+}
+
+th.total {
+  text-align: right;
+  padding-right: 20px;
 }
 
 .product {
@@ -59,8 +65,10 @@ table .id {
   text-transform: none;
 }
 
-.total {
+th.total,
+td.total {
   text-align: right;
+  width: 10%;
 }
 
 .quantity {

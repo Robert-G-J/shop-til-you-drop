@@ -10,11 +10,11 @@ exports[`<ProductTableRow /> renders correctly 1`] = `
   <td
     className="product"
   >
-    bumbleclark
+    bumblescnark
     <p
       className="description"
     >
-      A scnarfing good time
+      A scnarfing good time throughout any passive aggressive encounter
     </p>
   </td>
   <td
@@ -38,7 +38,8 @@ exports[`<ProductTableRow /> renders correctly 1`] = `
   <td
     className="total"
   >
-    0
+    £
+    2.10
   </td>
 </tr>
 `;

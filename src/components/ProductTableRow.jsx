@@ -28,7 +28,7 @@ const ProductTableRow = ({
         }
       />
     </td>
-    <td className="total">0</td>
+    <td className="total">£{(price * quantity).toFixed(2)}</td>
   </tr>
 );
 

@@ -5,16 +5,18 @@ import renderer from "react-test-renderer";
 
 describe("<ProductTableRow />", () => {
   let component;
-  const mockChange = jest.fn();
-
+  let mockChange;
   const props = {
     id: 1,
-    name: "bumbleclark",
+    name: "bumblescnark",
     price: "2.10",
-    description: "A scnarfing good time",
+    description:
+      "A scnarfing good time throughout any passive aggressive encounter",
     quantity: 1
   };
+
   beforeEach(() => {
+    mockChange = jest.fn();
     component = shallow(
       <ProductTableRow {...props} updateQuantity={mockChange} />
     );
@@ -54,6 +56,11 @@ describe("<ProductTableRow />", () => {
   describe("<input>", () => {
     it("exists", () => {
       expect(component.find(".input-quantity").length).toEqual(1);
+    });
+    xit("should call a click handler onChange", () => {
+      component.find(".input-quantity").simulate("change");
+      expect(mockChange).toHaveBeenCalled();
+      // TODO: fix test- event is undefined in <input/> onChange. Mounting makes enzyme wrap the <tr/> in a div, also raising an error
     });
   });
 });

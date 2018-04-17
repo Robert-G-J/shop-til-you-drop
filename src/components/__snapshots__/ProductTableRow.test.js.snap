@@ -28,8 +28,7 @@ exports[`<ProductTableRow /> renders correctly 1`] = `
   >
     <input
       className="input-quantity"
-      defaultValue="0"
-      min="1"
+      min="0"
       name="quantity"
       onChange={[Function]}
       type="number"

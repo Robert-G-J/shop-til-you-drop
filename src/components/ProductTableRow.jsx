@@ -21,8 +21,7 @@ const ProductTableRow = ({
         className="input-quantity"
         type="number"
         name="quantity"
-        min="1"
-        defaultValue="0"
+        min="0"
         value={quantity}
         onChange={e =>
           updateQuantity({ id: id, quantity: parseInt(e.target.value, 10) })
@@ -39,7 +38,10 @@ ProductTableRow.propTypes = {
   description: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   updateQuantity: PropTypes.func.isRequired,
-  quantity: PropTypes.number
+  quantity: PropTypes.number.isRequired
 };
 
+ProductTableRow.defaultProps = {
+  quantity: 0
+};
 export default ProductTableRow;

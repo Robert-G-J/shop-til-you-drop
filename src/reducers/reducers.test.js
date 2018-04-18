@@ -36,7 +36,7 @@ describe("Reducers", () => {
       const startingState = {
         ...initialState,
         basket: {
-          items: { 1: 9, 2: 5 }
+          quantityById: { 1: 9, 2: 5 }
         }
       };
 
@@ -44,8 +44,8 @@ describe("Reducers", () => {
         ...initialState,
         basket: {
           ...initialState.basket,
-          items: {
-            ...initialState.basket.items,
+          quantityById: {
+            ...initialState.basket.quantityById,
             1: 3
           }
         }

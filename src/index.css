@@ -5,7 +5,7 @@
 
 body {
   font-family: Roboto, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 100;
 }
 
@@ -41,12 +41,23 @@ td {
 }
 
 th {
-  color: #aaa;
+  color: #666;
   border-bottom: 1px solid #eee;
 }
 
 table .id {
   display: none;
+}
+
+th.total,
+td.total,
+td.grand-total {
+  text-align: right;
+  width: 10%;
+}
+
+td img {
+  width: 10rem;
 }
 
 th.total {
@@ -60,21 +71,16 @@ th.total {
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 100;
   text-transform: none;
-}
-
-th.total,
-td.total {
-  text-align: right;
-  width: 10%;
 }
 
 .quantity {
   width: 10%;
 }
 
-.input-quantity {
-  width: 40px;
+input.quantity {
+  width: 60px;
+  font-size: 1rem;
 }

@@ -12,7 +12,8 @@ describe("<ProductTableRow />", () => {
     price: "2.10",
     description:
       "A scnarfing good time throughout any passive aggressive encounter",
-    quantity: 1
+    quantity: 1,
+    image: "https://i.ytimg.com/vi/2GlCcO4zghM/hqdefault.jpg"
   };
 
   beforeEach(() => {
@@ -49,13 +50,16 @@ describe("<ProductTableRow />", () => {
     expect(component.find("td.price").length).toEqual(1);
   });
 
+  it("has a product image", () => {
+    expect(component.find("td.image img").length).toEqual(1);
+  });
   it("has product quantity cell", () => {
     expect(component.find("td.quantity").length).toEqual(1);
   });
 
   describe("<input>", () => {
     it("exists", () => {
-      expect(component.find(".input-quantity").length).toEqual(1);
+      expect(component.find("input.quantity").length).toEqual(1);
     });
     xit("should call a click handler onChange", () => {
       component.find(".input-quantity").simulate("change");

@@ -5,28 +5,36 @@
       "name": "plumbus",
       "description":
         "A Plumbus will aid many things in life, making life easier. With proper maintenance, handling, storage, and urging, Plumbus will provide you with a lifetime of better living and happiness",
-      "price": "399.99"
+      "price": "399.99",
+      "image":
+        "https://vignette.wikia.nocookie.net/rickandmorty/images/d/d1/Everybody_has_a_Plumbus.JPG/revision/latest?cb=20170926163022"
     },
     {
       "id": 2,
       "name": "butter robot",
       "description":
         "Small, two armed, mobile robot created for the sole purpose of passing butter",
-      "price": "49.99"
+      "price": "49.99",
+      "image":
+        "https://vignette.wikia.nocookie.net/rickandmorty/images/6/67/Butter_Robot_Picture.png/revision/latest?cb=20171106225602"
     },
     {
       "id": 3,
       "name": "szechuan sauce",
       "description":
         "Szechuan Chicken McNugget Sauce, a dipping sauce sachet for McDonald's Chicken McNuggets. AKA Mulan McNugget Sauce",
-      "price": "1.30"
+      "price": "1.30",
+      "image":
+        "https://vignette.wikia.nocookie.net/rickandmorty/images/2/2c/Rick_and_CDan.png/revision/latest?cb=20170404075439"
     },
     {
       "id": 4,
       "name": "microverse battery",
       "description":
         "Contains a miniature universe with a planet inhabited by intelligent life. These lifeforms use kinetic devices to produce electricity. Under the guise of \"waste power\" a majority of the energy produced is extracted to power a small personal spaceship",
-      "price": "90.00"
+      "price": "90.00",
+      "image":
+        "https://vignette.wikia.nocookie.net/rickandmorty/images/8/86/Microverse_Battery.png/revision/latest?cb=20160910010946"
     }
   ]
 }

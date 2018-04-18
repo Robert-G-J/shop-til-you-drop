@@ -7,10 +7,24 @@ export const initialState = {
     products: [...productData.products]
   },
   basket: {
-    items: {},
+    quantityById: {},
     currency: "GBP",
     total: 0.0
   }
+};
+
+export const getTotal = state => {
+  let acc = 0;
+  Object.keys(state.Reducers.basket.quantityById).forEach(id => {
+    state.Reducers.productData.products.forEach(product => {
+      if (product.id == id) {
+        acc =
+          acc +
+          parseFloat(product.price) * state.Reducers.basket.quantityById[id];
+      }
+    });
+  });
+  return acc.toFixed(2);
 };
 
 export const reducer = (state = initialState, action) => {
@@ -32,8 +46,8 @@ export const reducer = (state = initialState, action) => {
         ...state,
         basket: {
           ...state.basket,
-          items: {
-            ...state.basket.items,
+          quantityById: {
+            ...state.basket.quantityById,
             ...idQuantity
           }
         }

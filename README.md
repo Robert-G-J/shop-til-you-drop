@@ -54,6 +54,19 @@ $ npm run e2e-test
 
 And enjoy Cypress clicking around.
 
+Now build the project and serve it to check the production version with service worker caching of the app shell:
+
+```
+yarn build
+```
+
+Then install `serve` and serve the app:
+
+```
+$ yarn global add serve
+$ serve -s build
+```
+
 ## User stories
 
 These user stories were written at the start to guide design direction and to give acceptance criteria:
@@ -96,9 +109,13 @@ This field is suited to user input of a quantity they desire and fulfils most th
 
 Clearly Redux is a bit heavy weight (and slow) for such a miniscule app. It's used here more as a proof of skill/usage: to demonstrate how I might test action-creators and reducers, and to show how I might structure the architecture it requires.
 
+#### Architecture
+
+Because the app is small, I have _not_ separated the concerns of the reducers, although this would be sensible (and normal) as the app grows.
+
 ### CSS
 
-Gosh, I went for straight up vanilla CSS with no preprocessors. Since I came across Sass on a work project, I've been sold on its approach. I've used vanilla here as the style sheet is small and because I need the practice.
+Gosh, I went for straight up vanilla CSS with no preprocessors. Since I came across Sass on a work project, I've been sold on its approach. I've used vanilla here as the style sheet is small and because I need the practice. Ideally, I'd invest in using [styled-components](https://www.styled-components.com/), to ensure all styles are closely associated with their components.
 
 ### Absence of jQuery
 
@@ -115,6 +132,10 @@ Cypress.io is a fantastic UI testing framework, that I have only just begun to s
 ### No CI
 
 Normally I'd use Travis.CI and configure it at the beginning of the project. I pushed this project to Github some time after first starting it, so setting up Travis.CI has become a TODO.
+
+### Adaptive UI
+
+The UI is currently not adaptive, so requires media-queries to modify the layout for smaller screens. I would limit the size of the description box, and use `vw` and `vh` for relative text sizing (if it doesn't raise bugs).
 
 ## TODOs:
 

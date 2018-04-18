@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ProductTableRow from "./ProductTableRow";
 
-const ProductTable = ({ updateQuantity, products, basket }) => (
+const ProductTable = ({ updateQuantity, products, basket, total }) => (
   <table className="product-table">
     <thead>
       <tr className="header">
@@ -20,28 +20,44 @@ const ProductTable = ({ updateQuantity, products, basket }) => (
           name={product.name}
           description={product.description}
           price={product.price}
+          image={product.image}
           updateQuantity={updateQuantity}
-          quantity={basket.items[product.id]}
+          quantity={basket.quantityById[product.id]}
         />
       ))}
     </tbody>
+    <tfoot>
+      <tr>
+        <td />
+        <td />
+        <td />
+        <td>
+          <strong>Grand Total</strong>
+        </td>
+        <td className="grand-total">
+          <strong>£{total}</strong>
+        </td>
+      </tr>
+    </tfoot>
   </table>
 );
-
 ProductTable.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired
+      price: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired
     })
   ),
   basket: PropTypes.shape({
-    items: PropTypes.object.isRequired,
+    quantityById: PropTypes.object.isRequired,
     currency: PropTypes.string.isRequired,
     total: PropTypes.number.isRequired
   }),
-  updateQuantity: PropTypes.func.isRequired
+  updateQuantity: PropTypes.func.isRequired,
+  total: PropTypes.func
 };
+
 export default ProductTable;

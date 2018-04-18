@@ -8,6 +8,14 @@ exports[`<ProductTableRow /> renders correctly 1`] = `
     1
   </td>
   <td
+    className="image"
+  >
+    <img
+      alt="bumblescnark"
+      src="https://i.ytimg.com/vi/2GlCcO4zghM/hqdefault.jpg"
+    />
+  </td>
+  <td
     className="product"
   >
     bumblescnark
@@ -27,7 +35,7 @@ exports[`<ProductTableRow /> renders correctly 1`] = `
     className="quantity"
   >
     <input
-      className="input-quantity"
+      className="quantity"
       min="0"
       name="quantity"
       onChange={[Function]}

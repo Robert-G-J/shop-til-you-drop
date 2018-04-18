@@ -6,11 +6,16 @@ const ProductTableRow = ({
   name,
   description,
   price,
-  updateQuantity,
-  quantity
+  image,
+  quantity,
+  updateQuantity
 }) => (
   <tr>
     <td className="id">{id}</td>
+    <td className="image">
+      <img src={image} alt={name} />
+    </td>
+
     <td className="product">
       {name}
       <p className="description">{description}</p>
@@ -18,7 +23,7 @@ const ProductTableRow = ({
     <td className="price ">£{price}</td>
     <td className="quantity">
       <input
-        className="input-quantity"
+        className="quantity"
         type="number"
         name="quantity"
         min="0"
@@ -37,8 +42,9 @@ ProductTableRow.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  updateQuantity: PropTypes.func.isRequired,
-  quantity: PropTypes.number.isRequired
+  image: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
+  updateQuantity: PropTypes.func.isRequired
 };
 
 ProductTableRow.defaultProps = {

@@ -7,6 +7,7 @@ import { stubPropsForProductTable as stubProps } from "../constants/testHelpers"
 describe("<ProductTable />", () => {
   let component;
   const mockChange = jest.fn();
+  const mockTotal = jest.fn();
 
   beforeEach(() => {
     component = shallow(

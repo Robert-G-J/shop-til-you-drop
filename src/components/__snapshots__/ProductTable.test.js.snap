@@ -32,6 +32,14 @@ exports[`<ProductTable /> renders correctly 1`] = `
         1
       </td>
       <td
+        className="image"
+      >
+        <img
+          alt="plumbus"
+          src="https://vignette.wikia.nocookie.net/rickandmorty/images/d/d1/Everybody_has_a_Plumbus.JPG/revision/latest?cb=20170926163022"
+        />
+      </td>
+      <td
         className="product"
       >
         plumbus
@@ -51,7 +59,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
         className="quantity"
       >
         <input
-          className="input-quantity"
+          className="quantity"
           min="0"
           name="quantity"
           onChange={[Function]}
@@ -73,6 +81,14 @@ exports[`<ProductTable /> renders correctly 1`] = `
         2
       </td>
       <td
+        className="image"
+      >
+        <img
+          alt="butter robot"
+          src="https://vignette.wikia.nocookie.net/rickandmorty/images/6/67/Butter_Robot_Picture.png/revision/latest?cb=20171106225602"
+        />
+      </td>
+      <td
         className="product"
       >
         butter robot
@@ -92,7 +108,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
         className="quantity"
       >
         <input
-          className="input-quantity"
+          className="quantity"
           min="0"
           name="quantity"
           onChange={[Function]}
@@ -114,6 +130,14 @@ exports[`<ProductTable /> renders correctly 1`] = `
         3
       </td>
       <td
+        className="image"
+      >
+        <img
+          alt="szechuan sauce"
+          src="https://vignette.wikia.nocookie.net/rickandmorty/images/2/2c/Rick_and_CDan.png/revision/latest?cb=20170404075439"
+        />
+      </td>
+      <td
         className="product"
       >
         szechuan sauce
@@ -133,7 +157,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
         className="quantity"
       >
         <input
-          className="input-quantity"
+          className="quantity"
           min="0"
           name="quantity"
           onChange={[Function]}
@@ -155,6 +179,14 @@ exports[`<ProductTable /> renders correctly 1`] = `
         4
       </td>
       <td
+        className="image"
+      >
+        <img
+          alt="microverse battery"
+          src="https://vignette.wikia.nocookie.net/rickandmorty/images/8/86/Microverse_Battery.png/revision/latest?cb=20160910010946"
+        />
+      </td>
+      <td
         className="product"
       >
         microverse battery
@@ -174,7 +206,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
         className="quantity"
       >
         <input
-          className="input-quantity"
+          className="quantity"
           min="0"
           name="quantity"
           onChange={[Function]}
@@ -190,5 +222,24 @@ exports[`<ProductTable /> renders correctly 1`] = `
       </td>
     </tr>
   </tbody>
+  <tfoot>
+    <tr>
+      <td />
+      <td />
+      <td />
+      <td>
+        <strong>
+          Grand Total
+        </strong>
+      </td>
+      <td
+        className="grand-total"
+      >
+        <strong>
+          £
+        </strong>
+      </td>
+    </tr>
+  </tfoot>
 </table>
 `;

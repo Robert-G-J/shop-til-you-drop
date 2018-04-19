@@ -117,10 +117,6 @@ Because the app is small, I have _not_ separated the concerns of the reducers, a
 
 Gosh, I went for straight up vanilla CSS with no preprocessors. Since I came across Sass on a work project, I've been sold on its approach. I've used vanilla here as the style sheet is small and because I need the practice. Ideally, I'd invest in using [styled-components](https://www.styled-components.com/), to ensure all styles are closely associated with their components.
 
-### Absence of jQuery
-
-JQuery gets a bit of a bashing these days, despite being what I think is a rather well designed api. I've avoided it here to try and keep my code as vanilla ES6 as possible, no other reason.
-
 ### Reusable Components
 
 You'll notice there aren't any. This is intentional. Since I only code what is necessary by using TDD, and refactor after to remove duplication, there is yet to be a need for a component to be abstract to a more general reusuable form. When one arises, the abstraction will happen.

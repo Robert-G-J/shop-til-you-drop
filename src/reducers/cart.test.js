@@ -1,6 +1,6 @@
 /* global describe, expect, it */
 import types from "../constants/types";
-import { reducer, initialState } from "./reducers";
+import { reducer, initialState, getTotal } from "./cart";
 
 describe("Reducers", () => {
   it("Should return the initial state when no action is passed", () => {
@@ -51,6 +51,15 @@ describe("Reducers", () => {
         }
       };
       expect(reducer(initialState, action)).toEqual(expectedState);
+    });
+  });
+
+  describe("Getting the grand total", () => {
+    it("calculates zero when basket is empty", () => {
+      const startingState = {
+        ...initialState
+      };
+      expect(getTotal(startingState)).toEqual(0.0);
     });
   });
 });

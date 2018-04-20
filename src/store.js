@@ -1,9 +1,11 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import { reducer } from "./reducers/reducers";
+import cart from "./reducers/cart";
+import products from "./reducers/products";
 
 const rootReducer = combineReducers({
-  reducer
+  cart,
+  products
 });
 
 export default createStore(

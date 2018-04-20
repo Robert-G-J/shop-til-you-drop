@@ -18,14 +18,12 @@ describe("<ProductTableRow />", () => {
 
   beforeEach(() => {
     mockChange = jest.fn();
-    component = shallow(
-      <ProductTableRow {...props} updateQuantity={mockChange} />
-    );
+    component = shallow(<ProductTableRow {...props} updateCart={mockChange} />);
   });
 
   it("renders correctly", () => {
     const tree = renderer
-      .create(<ProductTableRow {...props} updateQuantity={mockChange} />)
+      .create(<ProductTableRow {...props} updateCart={mockChange} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

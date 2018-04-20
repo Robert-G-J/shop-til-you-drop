@@ -7,17 +7,16 @@ import { stubPropsForProductTable as stubProps } from "../constants/testHelpers"
 describe("<ProductTable />", () => {
   let component;
   const mockChange = jest.fn();
-  const mockTotal = jest.fn();
 
   beforeEach(() => {
     component = shallow(
-      <ProductTable {...stubProps} updateQuantity={mockChange} />
+      <ProductTable {...stubProps} updateCart={mockChange} />
     );
   });
 
   it("renders correctly", () => {
     const tree = renderer
-      .create(<ProductTable {...stubProps} updateQuantity={mockChange} />)
+      .create(<ProductTable {...stubProps} updateCart={mockChange} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

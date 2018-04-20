@@ -8,7 +8,7 @@ const ProductTableRow = ({
   price,
   image,
   quantity,
-  updateQuantity
+  updateCart
 }) => (
   <tr>
     <td className="id">{id}</td>
@@ -28,9 +28,7 @@ const ProductTableRow = ({
         name="quantity"
         min="0"
         value={quantity}
-        onChange={e =>
-          updateQuantity({ id: id, quantity: parseInt(e.target.value, 10) })
-        }
+        onChange={e => updateCart(id, parseInt(e.target.value, 10))}
       />
     </td>
     <td className="total">£{(price * quantity).toFixed(2)}</td>
@@ -44,7 +42,7 @@ ProductTableRow.propTypes = {
   price: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   quantity: PropTypes.number.isRequired,
-  updateQuantity: PropTypes.func.isRequired
+  updateCart: PropTypes.func.isRequired
 };
 
 ProductTableRow.defaultProps = {

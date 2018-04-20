@@ -237,6 +237,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
       >
         <strong>
           £
+          0.00
         </strong>
       </td>
     </tr>

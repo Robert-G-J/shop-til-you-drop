@@ -1,17 +1,15 @@
 import { connect } from "react-redux";
 import ProductTable from "./ProductTable";
-import { updateQuantity } from "../action-creators/actionCreators";
-import { getTotal } from "../reducers/reducers";
+import { updateCart } from "../action-creators/actionCreators";
 
 const mapStateToProps = state => ({
-  products: state.Reducers.productData.products,
-  basket: state.Reducers.basket,
-  total: getTotal(state)
+  products: state.products,
+  cart: state.cart
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateQuantity: params => {
-    dispatch(updateQuantity(params));
+  updateCart: (productId, quantity) => {
+    dispatch(updateCart(productId, quantity));
   }
 });
 

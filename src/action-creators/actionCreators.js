@@ -1,7 +1,13 @@
 import types from "../constants/types";
 
-export const updateQuantity = args => ({
+export const updateQuantity = (productId, quantity, products) => ({
   type: types.UPDATE_QUANTITY,
-  id: args.id,
-  quantity: args.quantity
+  productId,
+  quantity,
+  products
 });
+
+export const updateCart = (productId, quantity) => (dispatch, getState) => {
+  const products = getState().products;
+  dispatch(updateQuantity(productId, quantity, products));
+};

@@ -1,65 +1,47 @@
 /* global describe, expect, it */
 import types from "../constants/types";
-import { reducer, initialState, getTotal } from "./cart";
+import { cart, initialState, getTotal } from "./cart";
 
-describe("Reducers", () => {
-  it("Should return the initial state when no action is passed", () => {
-    expect(reducer(undefined, {})).toEqual(initialState);
-  });
-
-  describe("Is getting product data from file", () => {
-    it("should return the correct state", () => {
-      const action = {
-        type: types.IS_GETTING_PRODUCTS
-      };
-
-      const expectedState = {
-        ...initialState,
-        productData: {
-          isGetting: true,
-          ...initialState.productData.products
-        }
-      };
-
-      expect(reducer(undefined, action)).toEqual(expectedState);
-    });
+describe("Cart reducers", () => {
+  it("should return the initial state when no action is passed", () => {
+    expect(cart(undefined, {})).toEqual(initialState);
   });
 
   describe("Changing quantity of an item", () => {
     it("should return correct state", () => {
       const action = {
         type: types.UPDATE_QUANTITY,
-        id: 1,
-        quantity: 3
+        productId: 1,
+        quantity: 3,
+        products: [{ id: 1, name: "test", price: 10.0 }]
       };
 
       const startingState = {
         ...initialState,
-        basket: {
-          quantityById: { 1: 9, 2: 5 }
-        }
+        quantityByProductId: {}
       };
 
       const expectedState = {
         ...initialState,
-        basket: {
-          ...initialState.basket,
-          quantityById: {
-            ...initialState.basket.quantityById,
-            1: 3
-          }
-        }
+        quantityByProductId: {
+          ...initialState.quantityByProductId,
+          1: 3
+        },
+        total: 30
       };
-      expect(reducer(initialState, action)).toEqual(expectedState);
+      expect(cart(startingState, action)).toEqual(expectedState);
     });
   });
 
   describe("Getting the grand total", () => {
-    it("calculates zero when basket is empty", () => {
-      const startingState = {
-        ...initialState
-      };
-      expect(getTotal(startingState)).toEqual(0.0);
+    const products = [{ id: 1, name: "test", price: 10.0 }];
+    it("calculates zero when cart is empty", () => {
+      const quantityByProductId = {};
+      expect(getTotal(quantityByProductId, products)).toEqual(0);
+    });
+    it("calculates correctly when cart has item", () => {
+      const quantityByProductId = { 1: 4 };
+      expect(getTotal(quantityByProductId, products)).toEqual(40);
     });
   });
 });

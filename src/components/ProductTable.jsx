@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ProductTableRow from "./ProductTableRow";
 
-const ProductTable = ({ updateQuantity, products, basket, total }) => (
+const ProductTable = ({ updateCart, products, cart }) => (
   <table className="product-table">
     <thead>
       <tr className="header">
@@ -21,8 +21,8 @@ const ProductTable = ({ updateQuantity, products, basket, total }) => (
           description={product.description}
           price={product.price}
           image={product.image}
-          updateQuantity={updateQuantity}
-          quantity={basket.quantityById[product.id]}
+          updateCart={updateCart}
+          quantity={cart.quantityByProductId[product.id]}
         />
       ))}
     </tbody>
@@ -35,7 +35,7 @@ const ProductTable = ({ updateQuantity, products, basket, total }) => (
           <strong>Grand Total</strong>
         </td>
         <td className="grand-total">
-          <strong>£{total}</strong>
+          <strong>£{cart.total.toFixed(2)}</strong>
         </td>
       </tr>
     </tfoot>
@@ -51,13 +51,12 @@ ProductTable.propTypes = {
       image: PropTypes.string.isRequired
     })
   ),
-  basket: PropTypes.shape({
-    quantityById: PropTypes.object.isRequired,
+  cart: PropTypes.shape({
+    quantityByProductId: PropTypes.object.isRequired,
     currency: PropTypes.string.isRequired,
     total: PropTypes.number.isRequired
   }),
-  updateQuantity: PropTypes.func.isRequired,
-  total: PropTypes.func
+  updateCart: PropTypes.func
 };
 
 export default ProductTable;

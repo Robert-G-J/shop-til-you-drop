@@ -7,7 +7,8 @@ export const updateQuantity = (productId, quantity, products) => ({
   products
 });
 
-export const updateCart = (productId, quantity) => (dispatch, getState) => {
-  const products = getState().products;
-  dispatch(updateQuantity(productId, quantity, products));
+export const updateCart = (productId, quantity = 0) => (dispatch, getState) => {
+  const validatedQuantity = isNaN(quantity) || quantity < 0 ? 0 : quantity;
+  const { products } = getState();
+  dispatch(updateQuantity(productId, validatedQuantity, products));
 };

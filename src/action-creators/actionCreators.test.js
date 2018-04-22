@@ -1,47 +1,52 @@
 import * as actions from "./actionCreators";
 import types from "../constants/types";
-import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
+import configureMockStore from "redux-mock-store";
+import thunk from "redux-thunk";
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
 describe("Shopping cart action creators", () => {
   describe("Updating the cart", () => {
-    let productId, quantity, products, expectedAction;
+    let productId, quantity, expectedActions;
+    const products = [{ id: 1, name: "jones", price: "1.99" }];
+    const initialState = {
+      products
+    };
+    const store = mockStore(initialState);
+
     beforeEach(() => {
-      productId = 1;
-      quantity = 3;
-      products = [
-        { id: 1, name: "jones", price: "1.99" }
-      ]
-      expectedAction = {
-        type: types.UPDATE_QUANTITY,
-        productId: productId,
-        quantity: quantity,
-        products: products
-      };
-    })
+      store.clearActions();
+      [productId, quantity] = [1, 3];
+      expectedActions = [
+        {
+          type: types.UPDATE_QUANTITY,
+          productId,
+          quantity,
+          products
+        }
+      ];
+    });
 
     it("has an action creator to updateQuantity", () => {
-      const productId = 1;
-      const quantity = 3;
-      const products = [
-        { id: 1, name: "jones", price: "1.99" }
-      ]
-      const expectedAction = {
-        type: types.UPDATE_QUANTITY,
-        productId: productId,
-        quantity: quantity,
-        products: products
-      };
-      expect(actions.updateQuantity(productId, quantity, products)).toEqual(expectedAction);
+      expect(actions.updateQuantity(productId, quantity, products)).toEqual(
+        expectedActions[0]
+      );
     });
-    it('dispatches updateQuantity when called', () => {
-      const store = mockStore({});
-      const expectedActions = { type: types.UPDATE_QUANTITY, }
 
+    it("dispatches updateQuantity when called", () => {
+      store.dispatch(actions.updateCart(productId, quantity));
+      expect(store.getActions()).toEqual(expectedActions);
+    });
 
-    })
+    it("transforms NaN to 0 for quantity", () => {
+      store.dispatch(actions.updateCart(productId, NaN));
+      expect(store.getActions()[0].quantity).toEqual(0);
+    });
+    it("transforms -ve quantity to 0", () => {
+      store.dispatch(actions.updateCart(productId, -1));
+      const { quantity: storedQuantity } = store.getActions()[0];
+      expect(storedQuantity).toEqual(0);
+    });
   });
 });

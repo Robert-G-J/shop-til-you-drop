@@ -66,6 +66,7 @@ th.total {
 }
 
 .product {
+  width: 100%;
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -83,4 +84,16 @@ th.total {
 input.quantity {
   width: 60px;
   font-size: 1rem;
+}
+
+.bp-tablet {
+  display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .bp-tablet {
+    display: block;
+  }
 }

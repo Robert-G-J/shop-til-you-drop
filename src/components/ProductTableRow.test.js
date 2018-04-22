@@ -32,10 +32,6 @@ describe("<ProductTableRow />", () => {
     expect(component.exists()).toEqual(true);
   });
 
-  it("has product id", () => {
-    expect(component.find("td.id").length).toEqual(1);
-  });
-
   it("has product name", () => {
     expect(component.find("td.product").length).toEqual(1);
   });

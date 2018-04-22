@@ -11,18 +11,18 @@ const ProductTableRow = ({
   updateCart
 }) => (
   <tr>
-    <td className="id">{id}</td>
-    <td className="image">
+    <td className="image bp-tablet">
       <img src={image} alt={name} />
     </td>
 
     <td className="product">
       {name}
-      <p className="description">{description}</p>
+      <p className="description bp-tablet">{description}</p>
     </td>
     <td className="price ">£{price}</td>
     <td className="quantity">
       <input
+        required
         className="quantity"
         type="number"
         name="quantity"

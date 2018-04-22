@@ -6,6 +6,7 @@ const ProductTable = ({ updateCart, products, cart }) => (
   <table className="product-table">
     <thead>
       <tr className="header">
+        <th className="bp-tablet" />
         <th />
         <th>Price</th>
         <th className="quantity">Quantity</th>
@@ -28,14 +29,14 @@ const ProductTable = ({ updateCart, products, cart }) => (
     </tbody>
     <tfoot>
       <tr>
-        <td />
+        <td className="bp-tablet" />
         <td />
         <td />
         <td>
           <strong>Grand Total</strong>
         </td>
         <td className="grand-total">
-          <strong>£{cart.total.toFixed(2)}</strong>
+          <strong>£{cart.total.toFixed(2).toString()}</strong>
         </td>
       </tr>
     </tfoot>

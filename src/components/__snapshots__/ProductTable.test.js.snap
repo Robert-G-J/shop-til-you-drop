@@ -8,6 +8,9 @@ exports[`<ProductTable /> renders correctly 1`] = `
     <tr
       className="header"
     >
+      <th
+        className="bp-tablet"
+      />
       <th />
       <th>
         Price
@@ -27,12 +30,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
   <tbody>
     <tr>
       <td
-        className="id"
-      >
-        1
-      </td>
-      <td
-        className="image"
+        className="image bp-tablet"
       >
         <img
           alt="plumbus"
@@ -44,7 +42,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
       >
         plumbus
         <p
-          className="description"
+          className="description bp-tablet"
         >
           A Plumbus will aid many things in life, making life easier. With proper maintenance, handling, storage, and urging, Plumbus will provide you with a lifetime of better living and happiness
         </p>
@@ -63,6 +61,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
           min="0"
           name="quantity"
           onChange={[Function]}
+          required={true}
           type="number"
           value={3}
         />
@@ -76,12 +75,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
     </tr>
     <tr>
       <td
-        className="id"
-      >
-        2
-      </td>
-      <td
-        className="image"
+        className="image bp-tablet"
       >
         <img
           alt="butter robot"
@@ -93,7 +87,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
       >
         butter robot
         <p
-          className="description"
+          className="description bp-tablet"
         >
           Small, two armed, mobile robot created for the sole purpose of passing butter
         </p>
@@ -112,6 +106,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
           min="0"
           name="quantity"
           onChange={[Function]}
+          required={true}
           type="number"
           value={3}
         />
@@ -125,12 +120,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
     </tr>
     <tr>
       <td
-        className="id"
-      >
-        3
-      </td>
-      <td
-        className="image"
+        className="image bp-tablet"
       >
         <img
           alt="szechuan sauce"
@@ -142,7 +132,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
       >
         szechuan sauce
         <p
-          className="description"
+          className="description bp-tablet"
         >
           Szechuan Chicken McNugget Sauce, a dipping sauce sachet for McDonald's Chicken McNuggets. AKA Mulan McNugget Sauce
         </p>
@@ -161,6 +151,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
           min="0"
           name="quantity"
           onChange={[Function]}
+          required={true}
           type="number"
           value={0}
         />
@@ -174,12 +165,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
     </tr>
     <tr>
       <td
-        className="id"
-      >
-        4
-      </td>
-      <td
-        className="image"
+        className="image bp-tablet"
       >
         <img
           alt="microverse battery"
@@ -191,7 +177,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
       >
         microverse battery
         <p
-          className="description"
+          className="description bp-tablet"
         >
           Contains a miniature universe with a planet inhabited by intelligent life. These lifeforms use kinetic devices to produce electricity. Under the guise of "waste power" a majority of the energy produced is extracted to power a small personal spaceship
         </p>
@@ -210,6 +196,7 @@ exports[`<ProductTable /> renders correctly 1`] = `
           min="0"
           name="quantity"
           onChange={[Function]}
+          required={true}
           type="number"
           value={0}
         />
@@ -224,7 +211,9 @@ exports[`<ProductTable /> renders correctly 1`] = `
   </tbody>
   <tfoot>
     <tr>
-      <td />
+      <td
+        className="bp-tablet"
+      />
       <td />
       <td />
       <td>

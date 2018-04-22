@@ -3,12 +3,7 @@
 exports[`<ProductTableRow /> renders correctly 1`] = `
 <tr>
   <td
-    className="id"
-  >
-    1
-  </td>
-  <td
-    className="image"
+    className="image bp-tablet"
   >
     <img
       alt="bumblescnark"
@@ -20,7 +15,7 @@ exports[`<ProductTableRow /> renders correctly 1`] = `
   >
     bumblescnark
     <p
-      className="description"
+      className="description bp-tablet"
     >
       A scnarfing good time throughout any passive aggressive encounter
     </p>
@@ -39,6 +34,7 @@ exports[`<ProductTableRow /> renders correctly 1`] = `
       min="0"
       name="quantity"
       onChange={[Function]}
+      required={true}
       type="number"
       value={1}
     />

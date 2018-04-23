@@ -2,6 +2,14 @@
 
 A simple clientside React app that has a shopping basket that can be updated with quantities of four different products, can calculate the subtotal and total value of the basket and on the next iteration will convert the total into other currencies.
 
+Tablet/Desktop:
+
+![RicksKitCartDesktop](https://s31.postimg.cc/qrjo8epkr/Ricks_Kit_Cart_Desk_Top.png)
+
+Mobile:
+
+<img src="https://s31.postimg.cc/xi05htxaz/Ricks_Kit_Cart_Mobile.png" width="50%">
+
 ## Installation
 
 Clone it down:

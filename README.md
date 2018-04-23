@@ -1,6 +1,6 @@
 # Shop til you drop
 
-A simple clientside React app that has a shopping basket that can be updated with quantities of four different products, can calculate the subtotal and total value of the basket and can convert the total into other currencies.
+A simple clientside React app that has a shopping basket that can be updated with quantities of four different products, can calculate the subtotal and total value of the basket and on the next iteration will convert the total into other currencies.
 
 ## Installation
 
@@ -101,25 +101,26 @@ The React library is well suited to this particular design and especially if it 
 
 ## Design Decisions
 
-### Quantity <input type="number />
+### Quantity `<input type="number" />`
 
-This field is suited to user input of a quantity they desire and fulfils most the requirements of a basket. However, it requires a more serious form of (preferably server-side) validation (as I'm concerned it's a vulnerability), so finds itself on the list for refactoring and improvement.
+The input element felt like a good choice for a first iteration. However, they are generally considered to require a more serious form of (server-side) validation for security. I'd refactor this to use an increment and decrement button either side of the displayed quantity.
 
 ### Redux
 
-Clearly Redux is a bit heavy weight (and slow) for such a miniscule app. It's used here more as a proof of skill/usage: to demonstrate how I might test action-creators and reducers, and to show how I might structure the architecture it requires.
+Redux is a bit heavy weight (and slow to code) for such a miniscule app. It's used here more as a proof of skill/usage: to demonstrate how I might test action-creators and reducers, and to show how I might structure a larger app.
 
 #### Architecture
 
-Because the app is small, I have _not_ separated the concerns of the reducers, although this would be sensible (and normal) as the app grows.
+~~Because the app is small, I have _not_ separated the concerns of the reducers, although this would be sensible (and normal) as the app grows.~~
+The reducers and their state have been separated to improve the namespacing within the app. However, this introduced an interesting issue when calculating the 'grand total'. This is calculated in within the reducers concerned with the shopping basket, but also requires knowledge of the state related to products. The products were injected with the action-creator for updating the cart to overcome this.
 
 ### CSS
 
-Gosh, I went for straight up vanilla CSS with no preprocessors. Since I came across Sass on a work project, I've been sold on its approach. I've used vanilla here as the style sheet is small and because I need the practice. Ideally, I'd invest in using [styled-components](https://www.styled-components.com/), to ensure all styles are closely associated with their components.
+I went for straight up vanilla CSS with no preprocessors as the style sheet is small. Ideally, I'd invest in using [styled-components](https://www.styled-components.com/), to ensure all styles are closely associated with their (reusable)components.
 
 ### Reusable Components
 
-You'll notice there aren't any. This is intentional. Since I only code what is necessary by using TDD, and refactor after to remove duplication, there is yet to be a need for a component to be abstract to a more general reusuable form. When one arises, the abstraction will happen.
+You'll notice there aren't any (currently). This is a consequence of using TDD, and only coding what is necessary. There are not yet duplicate components that need to be abstracted to a more general form. Currently potential candidates for abstraction would be a quantity component and a table-row component.
 
 ### UI Testing
 
@@ -131,15 +132,16 @@ Normally I'd use Travis.CI and configure it at the beginning of the project. I p
 
 ### Adaptive UI
 
-The UI is currently not adaptive, so requires media-queries to modify the layout for smaller screens. I would limit the size of the description box, and use `vw` and `vh` for relative text sizing (if it doesn't raise bugs).
+The style sheet has a single media query to detect the width of the viewport. Currently on mobile, the images and description are hidden. When tablet or bigger, these are revealed. One improvement might be to include a smaller image on mobile.
 
 ## TODOs:
 
-Oh, where to start? Over the next few iterations I would:
+Where to start? Over the next few iterations I would:
 
-* Reskin with a less dull design
+* Re-skin with a more interesting design
 
-* Call the RickAndMorty wikia API to populate the app with data, rather than use a local file
 * Store the product data with something like Firebase.
-* Audit accessibility and validation. That hasn't had anywhere near the precedence.
+* Audit and improve accessibility and validation.
 * Refactor the `<input type="number"/>` to a couple of `<Button />`s that change quantity.
+* Currency conversion: call an external API to convert the 'grand total' between `£`, `$` and `€`.
+* Use React-Router and create a `<ProductList />` component with `add to basket` buttons for each product. This would populate the current Kit Cart.
